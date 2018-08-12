@@ -1,0 +1,22 @@
+.box{width:100%;height:100%}
+.top{border-bottom:8px solid #f7f7f7;}
+.center{background:none;margin-bottom:500px;margin-left:60px}
+.center>ul{width:1204px;height:48px;border-bottom:2px solid #dddddd;margin:58px auto;
+text-align: center;}
+.center>ul>li{float: left;width:220px;margin-left:110px;padding-bottom:24px;}
+.center>ul>li span{display:inline-block;width:24px;height:24px;border-radius:50%;background:#dcdcdc;color:white;line-height: 22px;margin-right:10px}
+.center .de>span{background:#ff9801;}
+.center .de{border-bottom:2px solid #ff9801;}
+#myform1,#myform2,#myform3{margin-top:-30px;width:460px;height:500px;top:260px;left:460px;display: none;}
+.center .dived{display: block!important;}
+.center .myform .box1{width:244px;position: relative;}
+.center .myform>div{width:402px;margin-bottom:40px;}
+.box1 .gh{height:100%;width:142px;position: absolute;left:270px;top:-8px}
+.center .myform .gh{float:right;}
+.check img{margin-left:110px}
+.center .myform .agree{border:none;color: #666666;margin-bottom:20px;}
+.center .myform .agree img{float: left;margin-top:16px;margin-right:10px;}
+.center .myform .agree a{color:#5099cb}
+.center .myform .agree a:hover{cursor: pointer;}
+.login{width:402px;height:50px}
+

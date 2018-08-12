@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search_list.css"/>
+		<link rel="stylesheet" type="text/css"  href="font/font_cgrablfk1s5/iconfont.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<div id="body-left" class="fl">
+				<div class="top-01">
+					<div class="top-01-left fl" >
+						<em>送至：</em><i id="citychoose">北京</i>
+						<span class="up changeup"></span>
+						<div class="city" >
+							<ul>
+								<li>
+									<a>北京</a>
+									<a>天津</a>
+									<a>河北省</a>
+									<a>山西省</a>
+								</li>
+								<li>
+									<a>内蒙古自治区</a>
+									<a>辽宁省</a>
+									<a>吉林省</a>
+								</li>
+								<li>
+									<a>黑龙江省</a>
+									<a>上海市</a>
+									<a>江苏省</a>
+									<a>浙江省</a>
+								</li>
+								<li>
+									<a>安徽省</a>
+									<a>福建省</a>
+									<a>江西省</a>
+									<a>山东省</a>
+								</li>
+								<li>
+									<a>河南省</a>
+									<a>湖北省</a>
+									<a>湖南省</a>
+									<a>广东省</a>
+								</li>
+								<li>
+									<a>广西壮族自治区</a>
+									<a>海南省</a>
+									<a>重庆</a>
+								</li>
+								<li>
+									<a>四川省</a>
+									<a>贵州省</a>
+									<a>云南省</a>
+								</li>
+								<li>
+									<a>西藏自治区</a>
+									<a>陕西省</a>
+									<a>甘肃省</a>
+								</li>
+								<li>
+									<a>青海省</a>
+									<a>宁夏回族自治区</a>
+								</li>
+								<li>
+									<a>新疆维吾尔自治区</a>
+									<a>台湾省</a>
+								</li>
+								<li>
+									<a>香港特别行政区</a>
+									<a>澳门特别行政区</a>
+								</li>
+								<li>
+									<a>海外</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="top-01-right fl">
+						<span class="fl">
+							<i>您好，欢迎来到</i>
+							<em>
+								<a href="index.html">为为商城</a>
+								<a href="login.html" class="a1">请登录</a>
+								<a href="register.html">免费注册</a>
+							</em>
+						</span>
+						<ul class="fr">
+							<li class="li1">
+								<a>
+									<i>我的订单</i>
+                                    <em class="eup changeup"></em>
+                                    <ul>
+                                    	<li>待付款订单</li>
+                                    	<li>待确认收货</li>
+                                    	<li>待评价交易</li>
+                                    </ul>
+								</a>
+							</li>
+							<li class="li1">
+								<a>
+									<i>商家中心</i>
+									<em class="eup changeup"></em>
+									<ul>
+                                    	<li>申请入驻</li>
+                                    	<li>我的店铺</li>
+                                    </ul>
+								</a>
+							</li>
+							<li>
+								<a class="eu2">
+									<img src="images/mobile-shopicon.png" class="fl"/>
+									<i>手机为为</i>
+								</a>
+							</li>
+							<li class="li1">
+								<a>
+									<i>客户服务</i>
+									<em class="eup changeup"></em>
+									<ul>
+                                    	<li>帮助中心</li>
+                                    	<li>售后服务</li>
+                                    </ul>
+								</a>
+							</li>
+							<li class="li1 last">
+								<a class="eud ">
+									<img src="images/weixin.png" class="fl"/>
+									<i>关注我们</i>
+									<em class="eup changeup"></em>
+								</a>
+								<ul>
+                                    	<li>扫二维码</li>
+                                    	<li>关注商城微信号</li>
+                                    	<li><img src="images/05151752275186226.gif"/></li>
+                                </ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="top-02">
+					<div  class="top-02-l clear fl">
+						<img src="images/05174866977471586.png"/>
+						<img src="images/logo2.jpg"/>
+					</div>
+					<div class="top-02-m fl">
+						<div class="search-01">
+							<span class="sp3">
+								<em class="sort2">商品</em><i class="eup up4 changeup "></i>
+								<ul>
+									<li>商品</li>
+									<li>店铺</li>
+								</ul>
+							</span>
+							<input id="sear_text" type="text" value="请输入您要搜索的商品关键字" name="searchText"/>
+							<b id="good_search">搜索</b>
+						</div>
+						<div class="search-02" id="such_as">
+							<a href="#">沙发</a>
+							<a href="#">床</a>
+							<a href="#">瓷砖</a>
+							<a href="#">地板</a>
+							<a href="#">餐桌</a>
+						</div>
+					</div>
+					<div class="top-02-r fl">
+						<span class="iconfont cc">&#xe624;</span>
+						<em>我的购物车</em>
+						<i class="iconfont uu">&#xe9fd;</i>
+					</div>
+				</div>
+				<div class="top-03">
+					<div class="top-03-l" id="list_sort">
+						<span class="iconfont pp">&#xe61a;</span>
+						<em>精选分类推荐</em>
+						<ul class="list" id="ul_list">
+						<li>
+							<h4><a>建材</a></h4>
+							<p><a>基础建材</a><a>瓷砖/大理石/陶瓷</a><a>卫浴</a></p>
+							<p><a>集成吊顶</a><a>橱柜</a><a>淋浴房</a></p>
+							<p><a>地板/榻榻米</a><a>移门衣柜</a><a>墙纸</a><a>门窗</a></p>
+							<p><a>净水器/水处理</a><a>定制楼梯</a><a>保险箱</a></p>	
+						</li>
+						<li>
+							<h4><a>家具家纺</a></h4>
+							<p><a>卧室</a><a>客厅</a><a>餐厅</a><a>书房</a><a>儿童房</a></p>
+							<p><a>办公家具</a><a>家纺</a><a>软装</a><a>家饰</a></p>	
+						</li>
+						<li>
+							<h4><a>装修服务</a></h4>
+							<p><a>免费设计</a><a>装修设计</a><a>装修大全</a></p>
+							<p><a>装修效果图</a><a>家居图册</a><a>精品专题</a></p>
+							<p><a>装修攻略</a><a>装修前</a><a>装修中</a><a>装修后</a></p>
+							<p><a>装修风水</a><a>装修学堂</a><a>家居生活</a></p>
+							<p><a>植物花卉</a><a>宠物</a><a>手工DIY</a></p>
+						</li>
+						</ul>
+					</div>
+					<ul class="top-03-m clear">
+						<li>首页</li>
+						<li>建材</li>
+						<li class="family">
+							家具家纺
+							<div class="sort">
+								<div class="s-l">
+									<ul>
+										<li>
+											<h4>卧室</h4>
+											<p><a>床</a><a>床垫</a><a>床头柜</a><a>衣柜</a></p>
+											<p><a>妆镜台/妆凳</a><a>衣帽架</a><a>床尾凳</a></p>
+											<p><a>卧室套装</a></p>
+										</li>
+										<li>
+											<h4>儿童房</h4>
+											<p><a>儿童床</a><a>儿童床垫</a><a>儿童衣柜</a></p>
+											<p><a>儿童套装</a></p>
+										</li>
+										<li>
+											<h4>软装</h4>
+											<p><a>窗帘</a><a>壁纸</a><a>软装</a></p>
+										</li>
+									</ul>
+								</div>
+								<div class="s-c">
+									<ul>
+										<li>
+											<h4>客厅</h4>
+											<p><a>床</a><a>床垫</a><a>床头柜</a><a>衣柜</a></p>
+											<p><a>妆镜台/妆凳</a><a>衣帽架</a><a>床尾凳</a></p>
+											<p><a>卧室套装</a></p>
+										</li>
+										<li>
+											<h4>办公家具</h4>
+											<p><a>儿童床</a><a>儿童床垫</a><a>儿童衣柜</a></p>
+											<p><a>儿童套装</a></p>
+										</li>
+										<li>
+											<h4>家纺</h4>
+											<p><a>窗帘</a><a>壁纸</a><a>软装</a></p>
+										</li>
+									</ul>
+								</div>
+								<div class="s-r">
+									<ul>
+										<li>
+											<h4>餐厅</h4>
+											<p><a>床</a><a>床垫</a><a>床头柜</a><a>衣柜</a></p>
+											<p><a>妆镜台/妆凳</a><a>衣帽架</a><a>床尾凳</a></p>
+											<p><a>卧室套装</a></p>
+										</li>
+										<li>
+											<h4>书房</h4>
+											<p><a>儿童床</a><a>儿童床垫</a><a>儿童衣柜</a></p>
+											<p><a>儿童套装</a></p>
+										</li>
+										<li>
+											<h4>家饰</h4>
+											<p><a>窗帘</a><a>壁纸</a><a>软装</a></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>品牌</li>
+						<li>店铺</li>
+						<li>装修攻略</li>
+						<li>装修图库</li>
+					</ul>
+					<div class="top-03-r">
+					    <img src="images/phone.jpg"/>
+					</div>
+				</div>
+				<h3 class="h_til">
+					<span class="iconfont">&#xe660;</span>
+					<em>首页</em>
+					<i class="iconfont">&#xe68b;</i>
+					<b>搜索结果</b>
+				</h3>
+				<section id="sear_box">
+					<div class="s-Left">
+						<div class="s-Left-01">
+							<h3>分类筛选</h3>
+							<ul>
+								<li>
+									<em><span id="list_01" class="iconfont">&#xe618;</span>家具家纺</em>
+									<ul id="list_ul1">
+										<li>
+											<em><span id="list_02" class="iconfont">&#xe618;</span>沙发</em>
+											<ul id="list_ul2">
+												<li>美式沙发</li>
+												<li>欧式沙发</li>
+												<li>中式沙发</li>
+											</ul>
+										</li>
+										<li>床</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="s-Left-02">
+							<h3>最近浏览</h3>
+							<ul>
+								<li>暂无浏览记录</li>
+							</ul>
+						</div>
+					</div>
+					<div class="s-Right">
+						<div class="s-Right-t">
+							<span>排序方式：</span>
+							<ul>
+								<li>默认</li>
+								<li><span>销量</span><em class="iconfont">&#xe7f2;</em></li>
+								<li><span>人气</span><em class="iconfont">&#xe7f2;</em></li>
+								<li><span>价格</span><em class="iconfont">&#xe7f2;</em></li>
+							</ul>
+							<ol>
+								<li>商品所在地区：</li>
+								<li>
+									<p class="p_up clear">
+										<em>不限地区</em>
+										<span id="sp_c" class="up changeup"></span>
+										<ol>
+											<li>
+												<h3>常用地区</h3>
+											</li>
+											<li>
+												<h3>省份</h3>
+											</li>
+											<li>
+												<h3>常用地区</h3>
+											</li>
+											<li>
+												<h3>不限地区</h3>
+											</li>
+										</ol>
+									</p>
+									
+								</li>
+							</ol>
+						</div>
+						<div class="s-Right-m"></div>
+						<div class="s-Right-b01"></div>
+						<div class="s-Right-b02"></div>
+					</div>
+				</section>
+				<div class="bottom-01">
+					<dl>
+						<dt><img src="images/aafda0df33d2a95e6010.png"</dt>
+						<dd>正品保证</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/f0a5ee0bfc20dd005850.png"</dt>
+						<dd>假一赔五</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/72edb29cc2ad2af46000.png"</dt>
+						<dd>14天无理由退货</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/c827005fae642e146280.png"</dt>
+						<dd>先行赔付</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/3497c1b195bde1928550.png"</dt>
+						<dd>三年保质</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/ea3ff5e9bf84afc34800.png"</dt>
+						<dd>线下看样</dd>
+					</dl>
+				</div>
+				<div class="bottom-02">
+					<div class="b-l">
+						<h4>客服在线</h4>
+						<ol>
+							<li><img src="images/index_08.jpg"/></li>
+							<li>
+								<p>021-56457299</p>
+								<p>周一到周五9:00-17:30</p>
+							</li>
+						</ol>
+					</div>
+					<div class="b-c">
+						<ul>
+							<li>
+								<h4>帮助中心</h4>
+								<p>忘记密码</p>
+								<p>积分兑换说明</p>
+								<p>积分细则</p>
+							</li>
+							<li>
+								<h4>店主之家</h4>
+								<p>如何申请开店</p>
+							</li>
+							<li>
+								<h4>支付方式</h4>
+								<p>在线支付</p>
+							</li>
+							<li>
+								<h4>售后服务</h4>
+								<p>退换货政策</p>
+								<p>退换申请</p>
+								<p>退换货流程</p>
+							</li>
+							<li>
+								<h4>客服中心</h4>
+								<p>会员修改密码</p>
+								<p>会员修改个人资料</p>
+							</li>
+						</ul>
+					</div>
+					<div class="b-r">
+						<ol>
+							<li>
+								<p>为为网App</p>
+								<img src="images/index_03.jpg"/>
+								<p>下载移动客户端</p>
+							</li>
+							<li>
+								<p>为为网微信</p>
+								<img src="images/index_05.jpg"/>
+								<p>为为官方微信</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<div class="bottom-03">
+					<ul class="clear">
+						<li>
+							<a>首页</a>
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							<a>招聘英才</a>
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							<a>合作及洽谈</a>
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							<a>联系我们</a>
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							<a>关于我们</a>
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							<a>友情链接</a>
+						</li>
+					</ul>
+					<ol class="clear">
+						<li>
+							Copyright 2015 沪ICP备08001311号
+							<span class="iconfont">&#xe63a;</span>
+						</li>
+						<li>
+							 营业执照
+						</li>
+					</ol>
+				</div>
+			
+			</div>
+			<div id="body-right" class="fl">
+				<div class="server">
+					<img src="images/default_user_portrait.gif"/>
+					<p class="vip_login alert">会员登录</p>
+				</div>
+				<div class="shoppingcar">
+					<span class="iconfont">&#xe60c;</span>
+					<em>购物车</em>
+				</div>
+				<div class="chatQQ"><a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAzODA3M180MjE0OTRfODAwMDM4MDczXzJf"><img src="images/qq-pic.jpg"/></a></div>
+				<div class="toTop">
+					<p class="iconfont">&#xe6b6;</p>
+					<p class="word">TOP</p>
+					<p class="go_back alert">返回顶部</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/startMove.js"></script>
+		<script src="js/search_list.js"></script>
+	</body>
+</html>

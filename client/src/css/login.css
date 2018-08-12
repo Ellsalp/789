@@ -1,0 +1,30 @@
+.box{width:1233px;height:100%;margin:0 auto;}
+.top{height:102px;width:1233px;padding:20px 68px;box-sizing: border-box;margin:0 auto;}
+.top-l img{float: left;}
+.top-r{background: none;border:none;font-size:20px;width:200px;margin-top:16px;}
+.top-r a:hover{cursor: pointer;}
+.center{width:1300px;background: #e2ebe8;margin-left:-36px}
+.center>img{margin: 38px 120px 160px 86px;float: left;}
+.center p{position: absolute;left:-101px;top:-10px}
+.center .myform{width:340px;height:440px;background: white;float: left;margin-top:38px;
+padding:20px 16px 20px 18px;box-sizing: border-box;position: absolute;left: 820px;}
+.center .myform h3{font-size:14px;color:#666666;padding-left:180px;margin-bottom: 44px;}
+.myform h3 a{color:#ff9900}
+.myform h3 a:hover{cursor:pointer;}
+.center .myform>div,.myform>h4,.myform>input{margin-top:20px}
+.myform>div{width:290px;height:46px;border:1px solid lightgray;line-height:46px;padding-left:10px}
+.myform span{float: left;width:26px;height:26px}
+.myform span img{width:100%;height:100%;margin:10px 0 0 0}
+.myform div input{float: left;margin-top:8px}
+.check img{margin:0;float:left;margin-top:10px}
+.myform .iconfont{font-size:24px}
+.myform .dd{color:lightgray}
+.myform div>input{font-size:16px;height:30px;width:140px;}
+.myform h4{font-size:14px;color:#666666;padding-left:230px;margin-bottom:20px;}
+.myform h4 a:hover{color:#ff9900;cursor:pointer;}
+.login{width:300px;height:38px;background: #ff9900;color:white;border-radius:4px;font-size:14px}
+.login:hover{cursor: pointer;}
+.bottom-03{height:100px;width:100%;box-sizing: border-box;padding-top:30px;}
+.bottom-03 ul{margin-left:500px;}
+.bottom-03 ol{margin-left:530px}
+

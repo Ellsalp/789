@@ -1,0 +1,19 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,td,fieldset,legend,input{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset,iframe{border:0; }
+img{display:block; border:none;}
+a,u{text-decoration:none; color:black;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style: normal;}
+body{font-family:"微软雅黑";font-size:12px;}
+input,a{outline:none;}
+input{border:none}
+html,body{width:100%;height:100%;}
+/*万能清除浮动*/
+.clear:after{content: ".";display: block;clear: both;height: 0;visibility: hidden;}
+.clear{zoom:1;}
+/*左右浮动*/
+.fl{float: left;}
+.fr{float: right;}
+/*透明度
+.trans{filter: alpha(opacity=value);opacity:0.value}*/
