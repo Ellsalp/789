@@ -17,8 +17,9 @@ while($row=$result->fetch_assoc()){
 	$arr_his_price=$row["his_price"].",";
 	$arr_detail=$row["detail"].",";
 	$arr_number=$row["number"].",";
+	$arr_gonum=$row["good_count"].",";
 	$arr_images_src=$row["images_src"].";";
-	$object=array("price"=>$arr_price,"his_price"=>$arr_his_price,"detail"=>$arr_detail,"number"=>$arr_number,"id"=>$id,"src"=>$arr_images_src);
+	$object=array("price"=>$arr_price,"his_price"=>$arr_his_price,"detail"=>$arr_detail,"number"=>$arr_number,"id"=>$id,"arr_gonum"=>$arr_gonum,"src"=>$arr_images_src);
 	foreach ($object as $key=>$val) {
 		echo $val;
 	}		

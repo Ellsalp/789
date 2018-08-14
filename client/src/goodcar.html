@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/search_list.css"/>
 		<link rel="stylesheet" type="text/css"  href="font/font_cgrablfk1s5/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodcar.css"/>
 	</head>
 	<body>
 		<div id="box">
@@ -280,7 +281,32 @@
 					<b>我的购物车</b>
 				</h3>
 				<div id="good_list">
-					
+					<div id="list-top">
+						<table id="mytable">
+							<thead>
+								<tr>
+									<th>商品</th>
+									<th>商品描述</th>
+									<th>商品价格</th>
+									<th>数量</th>
+									<th>总价</th>
+									<th>删除</th>
+								</tr>
+							</thead>
+							<tbody id="tbody1">
+								
+							</tbody>
+						</table>
+						<div id="des_total" class="clear">
+							<h3 >总价：<span id="total_p"></span></h3>
+						</div>
+						<div id="input_box" class="clear">
+							<input type="button" value="继续购物" id="go_shopping"/>
+							<input type="button" value="清空购物车" id="clean_all"/>
+							<input type="button" value="去结算" id="go_pay"/>
+						</div>
+					</div>
+					<div id="list-bottom"></div>
 				</div>
 				<div class="bottom-01">
 					<dl>
@@ -406,7 +432,7 @@
 					<img src="images/default_user_portrait.gif"/>
 					<p class="vip_login alert">会员登录</p>
 				</div>
-				<div class="shoppingcar">
+				<div class="shoppingcar" id="gocar">
 					<span class="iconfont">&#xe60c;</span>
 					<em>购物车</em>
 				</div>
@@ -421,6 +447,6 @@
 		<script src="js/ajax.js"></script>
 		<script src="js/startMove.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/search_list.js"></script>
+		<script src="js/goodcar.js"></script>
 	</body>
 </html>

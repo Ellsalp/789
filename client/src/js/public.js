@@ -69,7 +69,8 @@ for(var i=0;i<a_len;i++){
 }
 //当点击搜索的时候，跳转到列表页
 good_search.onclick=function(){
-	location.href="search_list.html?沙发"
+	var tex=sear_text.value;
+	location.href="search_list.html?"+tex;
 }
 //详情页的跳转
 var ol_co=Array.from(getelemByCN("cho_ol"))
@@ -90,3 +91,6 @@ ol_co.forEach(function(el){
 shopcar.onclick=function(){
 	location.href="goodcar.html";
 }
+gocar.onclick=function(){
+		location.href="goodcar.html"
+	}

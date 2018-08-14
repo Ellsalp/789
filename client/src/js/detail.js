@@ -4,8 +4,8 @@ bigimg.src=small_img.src;
 bigimg.style.width="1600px";
 bigimg.style.height="1600px";
 imgbox.onmousemove=function(e){
-	var x=e.clientX-imgbox.offsetLeft-glass.offsetWidth/2;
-	var y=e.clientY-imgbox.offsetTop-glass.offsetHeight/2;
+	var x=e.pageX-imgbox.offsetLeft-glass.offsetWidth/2;
+	var y=e.pageY-imgbox.offsetTop-glass.offsetHeight/2;
 	var maxX=imgbox.offsetWidth-glass.offsetWidth-2;
 	var maxY=imgbox.offsetHeight-glass.offsetHeight-2;
 	//边界设置
@@ -67,3 +67,5 @@ li_co.forEach(function(ele){
 		bigimg.src=small_img.src;
 	}
 })
+
+

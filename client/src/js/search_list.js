@@ -34,17 +34,18 @@ var cb;
 var good_name;
 function infi(){
 	good_name=sear_text.value;
-	post("../../server/search_list.php","p="+p+"&user="+good_name,function(str){
+	console.log(good_name)
+	post("../../server/search_list.php","p="+p+"&good_name="+good_name,function(str){
 		var arr_tol=str.split(";");
 		arr_tol.pop();
-		console.log(arr_tol)
 		var count=0;
 		arr_tol.forEach(function(val){
 			count++;
 			var arr_ban=val.split(",");
+			console.log(arr_ban)
             var label_div=document.createElement("div");
             var label_img=document.createElement("img");
-            label_img.src="images/"+arr_ban[5]+".jpg";
+            label_img.src="images/"+arr_ban[6]+".jpg";
             var label_p=document.createElement("p");
             label_p.innerHTML=arr_ban[2];
             var label_h5=document.createElement("h5");
@@ -76,11 +77,30 @@ function infi(){
 		var input_arr=get_up_arr("creat_");
 		input_arr.forEach(function(elem){
 			elem.onclick=function(){
-				alert(elem.define_e)
+				var id=elem.define_e;
+				var flag=1;
+				post("../../server/update.php","id="+id+"&flag="+flag,function(str){
+					if(str=="库存不足！"){
+						alert(str)
+					}else{
+						alert("添加购物车成功！")
+					}
+				})
 			}
 		})
-
+		//点击div的时候跳转到详情页
+		var div_co=Array.from(con_box.children);
+		div_co.forEach(function(val){
+			val.onclick=function(e){
+				var el=e.target;
+				if(el.nodeName=="IMG"){
+					var src=el.src;
+			        location.href="detail.html?"+src;
+				}
+			}
+		})
 	})
+	
 }
 infi();//初始化页面,获取列表
 function get_count(){
@@ -113,4 +133,4 @@ next_p.onclick=function(){
 	}
 	return false;
 }
-	
+
