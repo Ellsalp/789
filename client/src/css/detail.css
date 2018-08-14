@@ -1,0 +1,102 @@
+.se-top{width:100%;height:526px;border:1px solid #F9F9F9}
+.se-top-l{width:400px;float: left;box-shadow: 2px 0 0 0 gainsboro}
+#imgbox{width:400px;height:400px;position: relative;float: left;}
+#imgtobig{float: left;position: absolute;left:470px;width:400px;height:400px;overflow: hidden;display: none;}
+#bigimg{position: absolute;}
+.se-top-l img{width:400px;height:400px;}
+#glass{width:100px;height:100px;background:rgba(250,250,250,0.4);position: absolute;}
+#img_br{padding:10px 30px}
+#go_left,#go_right{border:1px solid lightgray;width:16px;background: ghostwhite;height:70px;line-height:70px;float: left;text-align: center;font-weight:bold}
+#img_box{width:300px;float: left;height:70px;border-bottom:1px dashed gainsboro;position: relative;overflow: hidden;}
+#img_box img{width:54px;height:54px;margin:2px}
+#img_box ul{padding:0 6px;width:732px;position: absolute;}
+#img_box ul li{float: left;margin:4px 6px;border:1px solid gray}
+#img_box ul li:hover{border:2px solid orange}
+#go_left:hover,#go_right:hover{color:orange;cursor: pointer;}
+.btn_box input{height:30px;line-height: 30px;border-radius:4px;background:white;margin-top:6px;border:1px solid ghostwhite;color:gray}
+.btn_box input:nth-child(1){width:94px;margin-right:150px;padding-left:6px;cursor: pointer;}
+.btn_box input:nth-child(2){width:40px}
+.btn_box input:hover{background: ghostwhite;}
+.se-top-c{width:588px;float: left;background: #fafafa;color:#676767;padding-bottom:100px;}
+.se-top-c h2{font-weight: bold;margin:20px 0 4px 20px}
+.se-top-c h3{color:red;margin:0 0 20px 20px;font-size:12px}
+.detail_price{background: #eeeeee;padding:16px 20px}
+.pr_l p:nth-of-type(1){margin-bottom: 10px;}
+.pr_l p:nth-of-type(1) em{font-weight: bold;text-decoration: line-through;margin-left:10px;}
+.pr_l p:nth-of-type(2){font-size: 14px;}
+.pr_l p:nth-of-type(2) em{font-size: 16px;font-weight: bold;color:orange}
+.pr_r p:nth-of-type(1){margin-bottom: 10px;}
+.pr_r p:nth-of-type(2){margin-left: -20px;}
+.se-top-c>p{padding:10px 0 10px 20px;width:568px;border-bottom:1px dashed gainsboro;}
+.c_box p{margin:10px 0 10px 40px}
+.c_box span{float: left;margin-top:6px}
+.numb b{float: left;margin:6px 4px 0 20px;}
+.numb em{background:white;float: left;width:40px;height:30px;border:1px solid #CCCFD2;text-align: center;line-height:30px}
+.numb ul{float: left;margin:0 20px 0 6px;}
+.numb li{background: white;border:1px solid #CCCFD2;width:18px;height:14px;text-align: center;line-height:14px;margin-bottom: 2px;}
+.numb li:hover{cursor: pointer;color:orange;border:1px solid orange;}
+.numb s{float:left;text-decoration: none;margin-top:6px;color:darkgray}
+.cho_y{color:orange;font-weight:bold;margin:34px 0 10px 20px}
+.add_car{font-weight: bold;font-size:14px;}
+.add_car input{font-size:14px;font-weight: bold;margin:0 10px 0 18px;float:left;width:104px;height:34px;line-height:34px;border-radius: 4px;background:#b87a3f;color:white;}
+#add_shopcar{float:left;width:140px;height:34px;line-height: 34px;background:#fea500;border-radius: 4px;}
+#add_shopcar *{float: left;color:white;}
+#add_shopcar img{margin:8px 10px 0 20px}
+.se-top-r{width:207px;float: left;}
+.se-top-r h3{width:197px;height:30px;line-height:30px;font-weight: bold;background: ghostwhite;padding-left:10px}
+.char{height:30px;line-height: 30px;border-bottom:1px solid #EEEEEE;}
+.char *{float:left}
+.char span{margin-left:10px}
+.char img{margin-top:4px}
+.char em{color:red;margin:0 4px}
+.decr{border-bottom:1px dashed lightgray;}
+.decr h4{padding:10px 0;line-height:1em;color:grey;font-weight: bold;}
+.decr h4 span{margin-right:30px}
+.decr h4 em{font-weight: normal;}
+.decr p{padding:10px;overflow: hidden;}
+.decr p *{float: left;}
+.decr p span{color:darkgray}
+.decr p em{margin:0 4px}
+.decr p b{width:10px;height:4px;background:#e4502c;margin:6px  10px}
+.decr p i{color:orange}
+.decr p strong{width:44px;height:18px;line-height: 18px;background: orange;text-align: center;color:white;margin-left:4px}
+.con{height:30px;line-height: 30px;font-size:14px;color:grey;padding-left:10px}
+.con *{float: left;}
+.con img{width:18px;height:18px;margin-top:8px}
+.se-top-r h4{height:30px;line-height: 30px;color:gray}
+.se-top-r h5{height:30px;line-height: 30px;}
+.se-top-r h5 a{color:blue;margin-right:20px}
+.se-top-r h5 a:hover{cursor: pointer;}
+.midd_box{margin-top:10px}
+.midd_left{width:210px;color:#6a5d6e}
+.midd_left h3{height:40px;line-height:40px;border:1px solid #E1E1E1;color:#333333}
+.midd_left h3 *{float: left;}
+.midd_left span{margin:0 10px}
+.midd_left h3 img{width:18px;height:18px;margin-top:10px;border:1px solid grey;border-radius: 2px;}
+.midd_left h3 img:hover{cursor: pointer;}
+.d_sort{margin-top:10px;border:1px solid #E1E1E1}
+.d_sort h2{background:floralwhite;color:#333333;padding-left:10px;height:30px;line-height: 30px;font-size:14px;border-bottom:1px solid #E1E1E1}
+.d_sort ul{background:floralwhite;height:40px;line-height: 40px;padding-top:10px;border-bottom:1px solid #E1E1E1 ;}
+.d_sort ul li{float: left;padding:0px 6px;height:30px;line-height: 30px;}
+.d_sort ul li:hover{background:orange;color:white;border-radius: 4px;}
+.sear_go{height:30px;line-height: 30px;padding:10px;color:gray;border-bottom:1px dashed #BDBEAA;}
+.sear_go input:nth-child(1){height:30px;padding-left:10px;width:130px;border:1px solid gainsboro;}
+.sear_go input:nth-child(2){height:30px;padding-left:2px;width:40px;border:1px solid gainsboro;background: #E1E1E1;}
+.sear_go input:nth-child(2):hover{cursor:pointer;background: orange;}
+.d_sort h2:last-of-type{background:none;border-bottom:none;}
+.row-g{border:1px solid #E1E1E1;margin-top:10px}
+.row-g h2{font-size:14px;color:#000000;padding:6px 10px;background:floralwhite;border-bottom:1px solid #E1E1E1 ;}
+.row-g ul{border-bottom:1px solid #E1E1E1 ;}
+.row-g li{border:1px solid lightgray;width:54px;margin:10px;float: left;}
+.row-g li:hover{border:1px solid orange}
+.row-g img{height:50px;width:50px;margin:2px}
+.row-g a{display:block;padding:10px;color:#333333}
+.row-g a:hover{color:orange;cursor: pointer;}
+.midd_right{width:971px;border:1px solid #E1E1E1;margin-left:10px}
+.ol_li{border-bottom:1px solid #E1E1E1;background:#FFFFE0}
+.ol_li li{float: left;padding:10px 20px;border-right: 1px solid #E1E1E1;background:ghostwhite;}
+.ol_li li:hover{background: oldlace;}
+.midd_right .det {line-height:40px;padding-left:20px;border-bottom:1px solid #E1E1E1;}
+.midd_right .det span{margin-right:200px}
+.im_b{margin-top:10px}
+.h_til em:hover{color:orange;cursor: pointer;}

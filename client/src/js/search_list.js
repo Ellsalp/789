@@ -1,78 +1,3 @@
-//定义一个函数用来根据类名查找元素
-function  getelemByCN(clas_name){
-	var elem= document.getElementsByClassName(clas_name);
-	return elem;
-}
-//定义一个函数，当传入类名的时候，得到获取到的元素的数组（用于不同类名的元素获取）
-function get_up_arr(){
-	var len=arguments.length;
-	var arr=[];
-	for(var i=0;i<len;i++){
-		arr=arr.concat(Array.from(getelemByCN(arguments[i])));
-	}
-	return arr;
-}
-//调用get_up_arr()，让向下的图标在鼠标悬停的时候向上
-get_up_arr("top-01-left","li1","sp3","p_up").forEach(function(elem,ind){
-	var ind=ind;
-	elem.onmouseover=function(){
-		var changeup=getelemByCN("changeup")[ind];
-		changeup.style.backgroundPosition="0 -57px";
-	}
-	elem.onmouseout=function(){
-		var changeup=getelemByCN("changeup")[ind];
-		changeup.style.backgroundPosition="0 -48px";
-	}
-})
-//当点击li的时候切换城市
-getelemByCN("top-01-left")[0].onclick=function(e){
-	var el=e.target;
-	if(el.nodeName=="A"){
-		citychoose.innerHTML=el.innerHTML;
-	}
-}
-
-//当点击商品或店铺的时候切换内容
-getelemByCN("sp3")[0].onclick=function(e){
-	var el=e.target;
-	var sort2=getelemByCN("sort2")[0]
-	if(el.nodeName=="LI"){
-		sort2.innerHTML=el.innerHTML;
-	}
-}
-//右边消息提示
-get_up_arr("server","toTop").forEach(function(elem,ind){
-	elem.onmouseover=function(){
-		getelemByCN("alert")[ind].style.display="block";
-		this.style.cursor="pointer";
-	}
-	elem.onmouseout=function(){
-		getelemByCN("alert")[ind].style.display="none";
-		this.style.cursor="";
-	}
-	document.querySelector("#body-right").onclick=function(e){
-		var el=e.target;
-		var str=el.className
-		if(str=="toTop"||str=="iconfont"||str=="word"||str=="go_back"){
-			document.documentElement.scrollTop=0;
-		}
-	}
-})
-
-//当点击搜索框下方的文字时，搜索框中的文字发生改变
-var collect_a=such_as.children;
-var a_len=collect_a.length;
-for(var i=0;i<a_len;i++){
-	collect_a[i].onclick=function(){
-		sear_text.value=this.innerHTML;
-	}
-}
-
-//当点击搜索的时候，跳转到列表页
-good_search.onclick=function(){
-	location.href="search_list.html?沙发"
-}
-
 //将url后面的数据显示在搜索框
 var sear_c=decodeURIComponent(location.search.substring(1))
 sear_text.value=sear_c;
@@ -80,15 +5,6 @@ sear_text.value=sear_c;
 //三级菜单
 var flag1=1;
 var flag2=1;
-//list_01.onclick=function(){
-//	if()
-//	list_ul1.style.display="block";
-//	list_01.innerHTML="&#xe6ca;";
-//	list_02.onclick=function(){
-//		list_ul2.style.display="block";
-//		list_02.innerHTML="&#xe6ca;";
-//	}
-//}
 list_01.onclick=function(){
 	if(flag1){
 		list_ul1.style.display="block";
@@ -112,3 +28,89 @@ list_01.onclick=function(){
 		flag1=1;
 	}	
 }
+//
+var p=1;
+var cb;
+var good_name;
+function infi(){
+	good_name=sear_text.value;
+	post("../../server/search_list.php","p="+p+"&user="+good_name,function(str){
+		var arr_tol=str.split(";");
+		arr_tol.pop();
+		console.log(arr_tol)
+		var count=0;
+		arr_tol.forEach(function(val){
+			count++;
+			var arr_ban=val.split(",");
+            var label_div=document.createElement("div");
+            var label_img=document.createElement("img");
+            label_img.src="images/"+arr_ban[5]+".jpg";
+            var label_p=document.createElement("p");
+            label_p.innerHTML=arr_ban[2];
+            var label_h5=document.createElement("h5");
+            var label_span=document.createElement("span");
+            label_span.innerHTML=arr_ban[0];
+            var label_em=document.createElement("em");
+            label_em.innerHTML=arr_ban[1];
+            var label_h4=document.createElement("h4");
+            label_h4.innerHTML="库存"+arr_ban[3];
+            var label_input=document.createElement("input");
+            label_input.value="加入购物车";
+            label_h5.appendChild(label_span);
+            label_h5.appendChild(label_em);
+            label_div.appendChild(label_img);
+            label_div.appendChild(label_p);
+            label_div.appendChild(label_h5);
+            label_div.appendChild(label_h4); 
+            label_div.appendChild(label_input); 
+            label_input.type="button";
+            label_input.style.cssText="width:92px;height:30px;border:1px solid #EEEEEE;padding-left:2px;border-radius:4px;margin:0 0 10px 10px"
+            //给每个input的标签增加类名
+            label_input.className="creat_";
+            //给每个input标签增加自定义属性(将每个商品在数据库中id存在input标签的自定义属性上)
+            label_input.define_e=arr_ban[4];
+            con_box.appendChild(label_div);
+            label_div.style.cssText="float:left;width:22%;margin:10px 12px;text-align:left;background-color:white";
+		})
+		//获取页面上所有类名为creat_的input
+		var input_arr=get_up_arr("creat_");
+		input_arr.forEach(function(elem){
+			elem.onclick=function(){
+				alert(elem.define_e)
+			}
+		})
+
+	})
+}
+infi();//初始化页面,获取列表
+function get_count(){
+	post("../../server/count.php","count=0"+"&good_name="+good_name,function(str){
+		total.innerHTML=str;
+	})
+}
+get_count();//初始化页面,获取列表总页数
+//上一页
+last_p.onclick=function(){
+	con_box.innerHTML="";
+	p--;
+	if(p<1){
+		alert("已经是当前第一页了！");
+		location.reload();
+	}else{
+		infi();
+	}
+	return false;
+}
+//下一页
+next_p.onclick=function(){
+	con_box.innerHTML="";
+	p++;
+	if(p>total.innerHTML){
+		alert("已经是最后一页！");
+		location.reload();
+	}else{
+		infi();
+	}
+	return false;
+}
+	

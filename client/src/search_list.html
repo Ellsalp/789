@@ -166,7 +166,7 @@
 							<a href="#">餐桌</a>
 						</div>
 					</div>
-					<div class="top-02-r fl">
+					<div class="top-02-r fl" id="shopcar">
 						<span class="iconfont cc">&#xe624;</span>
 						<em>我的购物车</em>
 						<i class="iconfont uu">&#xe9fd;</i>
@@ -319,31 +319,148 @@
 							<ol>
 								<li>商品所在地区：</li>
 								<li>
-									<p class="p_up clear">
-										<em>不限地区</em>
-										<span id="sp_c" class="up changeup"></span>
+									<div class="p_up clear">
+										<p>
+											<em>不限地区</em>
+											<span id="sp_c" class="up changeup"></span>
+										</p>
 										<ol>
-											<li>
+											<li clas"normal">
 												<h3>常用地区</h3>
+												<p><a href="#">北京</a></p>
+												<p><a href="#">天津</a></p>
+												<p><a href="#">上海</a></p>
+												<p><a href="#">海外</a></p>
 											</li>
-											<li>
+											<li class="li2">
 												<h3>省份</h3>
+												<ul class="clear">
+													<li>
+														<div>
+															<span>A</span>
+															<h3>
+																<p><a>安徽</a></p>
+																<p><a>澳门</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>C</span>
+															<h3>
+																<p><a>重庆</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>F</span>
+															<h3>
+																<p><a>福建</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>G</span>
+															<h3>
+																<p><a>广东</a></p>
+																<p><a>甘肃</a></p>
+																<p><a>广西</a></p>
+																<p><a>贵州</a></p>
+															</h3>
+														</div>
+													</li>
+													
+													<li>
+														<div>
+															<span>H</span>
+															<h3>
+																<p><a>海南</a></p>
+																<p><a>河北</a></p>
+																<p><a>河南</a></p>
+																<p><a>黑龙江</a></p>
+																<p><a>湖北</a></p>
+																<p><a>湖南</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>J</span>
+															<h3>
+																<p><a>江苏</a></p>
+																<p><a>江西</a></p>
+																<p><a>吉林</a></p>
+															</h3>
+														</div>
+													</li>
+													
+													<li>
+														<div>
+															<span>N</span>
+															<h3>
+																<p><a>辽宁</a></p>
+																<p><a>内蒙古</a></p>
+																<p><a>宁夏</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>Q</span>
+															<h3>
+																<p><a>青海</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>S</span>
+															<h3>
+																<p><a>山东</a></p>
+																<p><a>山西</a></p>
+																<p><a>陕西</a></p>
+																<p><a>四川</a></p>
+															</h3>
+														</div>
+													</li>
+													
+													<li>
+														<div>
+															<span>T</span>
+															<h3>
+																<p><a>台湾</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>X</span>
+															<h3>
+																<p><a>西藏</a></p>
+																<p><a>新疆</a></p>
+																<p><a>香港</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>Y</span>
+															<h3>
+																<p><a>云南</a></p>
+															</h3>
+														</div>
+														<div>
+															<span>Z</span>
+															<h3>
+																<p><a>浙江</a></p>
+															</h3>
+														</div>
+													</li>
+												
+												
+												</ul>
 											</li>
 											<li>
-												<h3>常用地区</h3>
-											</li>
-											<li>
-												<h3>不限地区</h3>
+												<h3 class="d_h"><a>不限地区</a></h3>
 											</li>
 										</ol>
-									</p>
+									</div>
 									
 								</li>
 							</ol>
+							<div class="right_btn">
+								<input type="button" value="上一页" id="last_p" class="btn_change"/>
+								<input type="button" value="下一页" id="next_p"/>
+								<p>总计：<span id="total"></span>页</p>
+							</div>
 						</div>
-						<div class="s-Right-m"></div>
-						<div class="s-Right-b01"></div>
-						<div class="s-Right-b02"></div>
+						<div id="con_box" class="s-Right-m clear"></div>
 					</div>
 				</section>
 				<div class="bottom-01">
@@ -482,7 +599,9 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/ajax.js"></script>
 		<script src="js/startMove.js"></script>
+		<script src="js/public.js"></script>
 		<script src="js/search_list.js"></script>
 	</body>
 </html>

@@ -5,6 +5,8 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search_list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
 		<link rel="stylesheet" type="text/css"  href="font/font_cgrablfk1s5/iconfont.css"/>
 	</head>
 	<body>
@@ -141,7 +143,7 @@
 					</div>
 				</div>
 				<div class="top-02">
-					<div class="top-02-l clear fl">
+					<div  class="top-02-l clear fl">
 						<img src="images/05174866977471586.png"/>
 						<img src="images/logo2.jpg"/>
 					</div>
@@ -172,10 +174,10 @@
 					</div>
 				</div>
 				<div class="top-03">
-					<div class="top-03-l">
+					<div class="top-03-l" id="list_sort">
 						<span class="iconfont pp">&#xe61a;</span>
 						<em>精选分类推荐</em>
-						<ul class="list">
+						<ul class="list" id="ul_list">
 						<li>
 							<h4><a>建材</a></h4>
 							<p><a>基础建材</a><a>瓷砖/大理石/陶瓷</a><a>卫浴</a></p>
@@ -272,288 +274,170 @@
 					    <img src="images/phone.jpg"/>
 					</div>
 				</div>
-			    <div class="nav">
-					<ul class="ul1">
-						<li><a><img src="images/web-101-101-5.jpg"/></a></li>
-						<li><a><img src="images/web-101-101-1.jpg"/></a></li>
-						<li><a><img src="images/web-101-101-2.jpg"/></a></li>
-						<li><a><img src="images/web-101-101-4.jpg"/></a></li>
-						<li><a><img src="images/web-101-101-5.jpg"/></a></li>
-					</ul>
-					<ol class="ol1">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ol>
+				<h3 class="h_til">
+					<span class="iconfont">&#xe660;</span>
+					<em>首页</em>
+					<i class="iconfont">&#xe68b;</i>
+					<em>建材</em>
+					<i class="iconfont">&#xe68b;</i>
+					<em>橱柜</em>
+					<i class="iconfont">&#xe68b;</i>
+					<em>整体橱柜</em>
+					<i class="iconfont">&#xe68b;</i>
+					<em>瑞肯橱柜 榻榻米 白色 平方</em>
+				</h3>
+				<div class="se-top clear">
+					<div class="se-top-l">
+						<div class="t_b clear">
+							<div id="imgbox">
+								<img src="images/8763_05260594616161954_240.jpg" id="small_img"/>
+								<div id="glass"></div>
+							</div>
+							<div id="imgtobig">
+								<img src="" id="bigimg"/>
+							</div>
+						</div>
+						<div id="img_br">
+							<div id="go_left">&lt;</div>
+							<div id="img_box">
+								<ul class="clear" id="ul_ch">
+									<li><img src="images/8763_05260594616161954_240.jpg"/></li>
+									<li><img src="images/8765_05266566444674151_240.jpg"/></li>
+									<li><img src="images/8768_05271773233816798_240.jpg"/></li>
+									<li><img src="images/8757_05251748636970398_240.jpg"/></li>
+									<li><img src="images/8755_05277930148984728_240.jpg"/></li>
+									<li><img src="images/8748_05207070061298658_240.jpg"/></li>
+									<li><img src="images/8765_05266566444674151_240.jpg"/></li>
+									<li><img src="images/8763_05260594616161954_240.jpg"/></li>
+									<li><img src="images/8768_05271773233816798_240.jpg"/></li>
+									<li><img src="images/8757_05251748636970398_240.jpg"/></li>
+								</ul>
+							</div>
+							<div id="go_right">&gt;</div>
+							<div class="btn_box">
+								<input type="button"  value="收藏商品（0）"/>
+								<input type="button"  value="举报"/>
+							</div>
+						</div>
+					</div>
+					<div class="se-top-c">
+						<h2>瑞肯橱柜 榻榻米 白色 平方</h2>
+						<h3>尺寸可定制 上海地区满金额包邮 预定前请先与卖家确认送货地址调整运费</h3>
+						<div class="detail_price clear">
+							<div class="pr_l fl">
+								<p><span>市场价:</span><em> ¥258.00</em></p>
+								<p><span>商城价:</span><em> ¥198.00</em></p>
+							</div>
+							<div class="pr_r fr">
+								<p>商品评分</p>
+								<p><img src="images/xingxing.jpg"/></p>
+							</div>
+						</div>
+						<p>至　全国：  运费：300.00元</p>
+						<div class="c_box clear">
+							<p><span>颜色：</span><img src="images/lo_img.jpg"/></p>
+							<p><span>单位：</span><img src="images/log2_img.jpg"/></p>
+							<div class="numb">
+								<b>购买数量：</b>
+								<em>1</em>
+								<ul>
+									<li>+</li>
+									<li>-</li>
+								</ul>
+								<s>当前库存(2件)</s>
+							</div>
+						</div>
+						<div class="cho_y">
+							<span>已选择</span><em>白色</em><b>,</b><i>平方</i>
+						</div>
+						<div class="add_car">
+							<input type="button" value="立即购买"/>
+							<div id="add_shopcar">
+								<img src="images/shopping-box_03.jpg"/><span>添加购物车</span>
+							</div>
+						</div>
+					</div>
+					<div class="se-top-r">
+						<h3>瑞肯橱柜为为旗舰店</h3>
+						<div class="char clear">
+							<span>综合评分：</span>
+							<img src="images/good.jpg"/>
+							<em>5</em>
+							<i>分</i>
+						</div>
+						<div class="decr">
+							<h4><span>店铺动态评分</span><em>与行业相比</em></h4>
+							<p><span>描述相符</span><em>5分</em><b></b><i>持平</i><strong>----</strong></p>
+							<p><span>态度服务</span><em>5分</em><b></b><i>持平</i><strong>----</strong></p>
+							<p><span>发货速度</span><em>5分</em><b></b><i>持平</i><strong>----</strong></p>
+						</div>
+						<p class="con"><span>联系方式：</span><img src="images/qq-pic.jpg"/></p>
+						<h4>联系电话： 021-56452106</h4>
+						<h5><a>进入商家店铺</a><a>收藏店铺</a></h6>
+					</div>
 				</div>
-				<div class="produce">
-					<div class="produce-left">
-						<ul id="cho">
-							<li class="li_selected">热门商品</li>
-							<li>热评商品</li>
-							<li>新品上架</li>
-					    </ul>
-					    <ol class="clear ol_selected cho_ol" >
-					    	<li id="detail_test">
-					    		<img src="images/8763_05260594616161954_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ5606P 700*600</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/364_13430785_240.png"/>
-					    		<p>大将军陶瓷  客厅 全抛釉地砖</p>
-					    		<p>MQ8806P 800*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/889_13430408_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8576P 400*500</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/890_13430402_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8906P 600*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/930_05194049728014464_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ6806P 300*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    </ol>
-					    <ol class="clear cho_ol">
-					    	<li>
-					    		<img src="images/5269_05211992584327939_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ5606P 700*600</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/5360_05199211254696696_240.jpg"/>
-					    		<p>大将军陶瓷  客厅 全抛釉地砖</p>
-					    		<p>MQ8806P 800*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/5360_05199211974308837_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8576P 400*500</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/5507_05251897148029591_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8906P 600*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/8748_05207070061298658_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ6806P 300*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    </ol>
-					    <ol class="clear cho_ol">
-					    	<li>
-					    		<img src="images/8755_05277930148984728_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ5606P 700*600</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/364_13430785_240.png"/>
-					    		<p>大将军陶瓷  客厅 全抛釉地砖</p>
-					    		<p>MQ8806P 800*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/8768_05271773233816798_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8576P 400*500</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/890_13430402_240.jpg"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ8906P 600*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    	<li>
-					    		<img src="images/364_13430785_240.png"/>
-					    		<p>瑞肯橱柜 榻榻米 白色 平方</p>
-					    		<p>MQ6806P 300*800</p>
-					    		<h3>商城价:<span>¥198.00</span></h3>
-					    	</li>
-					    </ol>
-					</div>
-					
-					<div class="produce-right">
-						<h3>
-							<span>商城快报</span>
-							<span class="iconfont">&#xe63a;</span>
-							<span>装修资讯</span>
-						</h3>
-						<p><a>400客服电话调整公告(2016-0...</a></p>
-						<p><a>新广告法违禁词汇总(2014-01...</a></p>
-						<p><a>快速提交BUG，请进来哦！(...</a></p>
-						<p><a>为为商城物流配送说明(2016-...</a></p>
-						<p><a>新版上线，签到功能调整(201...</a></p>
-						
-					</div>	
-				</div>
-				<div class="deff-pro">
-					<h3><span>品牌推荐</span><img src="images/tips.jpg"/></h3>
-					<ol class="clear">
-						<li>
-							<a><img src="images/1085834d049b67a34650.jpg"/></a>
-							<a><img src="images/ebe7db2ffb77bf816380.jpg"/></a>
-							<a><img src="images/19d74fc3412e550a7180.jpg"/></a>
-						</li>
-						<li>
-							<a><img src="images/07c3222374d19c7f7870.jpg"/></a>
-							<a><img src="images/6b6c1c8204b009198830.jpg"/></a>
-							<a><img src="images/8ed5d2b0fd16a5f79010.jpg"/></a>
-							<a class="sp"><img src="images/52e4c1adb1d980ea7320.jpg"/></a>
-						</li>
-						<li class="sd">
-							<a><img src="images/05169001136287857_sm.png"/></a>
-							<a><img src="images/05169013804009107_sm.png"/></a>
-							<a><img src="images/05169020250565284_sm.jpg"/></a>
-							<a><img src="images/05169025152745426_sm.jpg"/></a>
-							<a><img src="images/05203639165873293_sm.png"/></a>
-							<a><img src="images/05204272203046551_sm.jpg"/></a>
-							<a class="sp"><img src="images/05204273895855069_sm.jpg"/></a>
-						</li>
-					</ol>
-					<ul id="floor_sort" class="floor clear">
-						<li>楼层直达：<span class="iconfont">&#xe63a;</span></li>
-						<li class="lid">1F家装主材</li>
-						<li>2F软装家具</li>
-						<li>3F家纺家饰</li>
-					</ul>
-					<div id="F1" class="lc">
-						<ul>
-							<li>
-								<h3>
-									<span>1F家装主材</span>
-									<em>
-										<a>坐便器/马桶</a>
-										<a>瓷砖</a>
-										<a>地板</a>
-										<a>移门衣柜</a>
-									</em>
-									<i class="cb"></i>
-								</h3>
-								<div class="lc-box clear">
-									<img src="images/7787643af8658c922280.jpg"/>
-									<div class="b-m">
-										<ul class="clear ul2">
-											<li><img src="images/56ad35ea1ecb4a6c3540.jpg"/></li>
-											<li><img src="images/4f20dfd49053929a7421.jpg"/></li>
-											<li><img src="images/56ad35ea1ecb4a6c3540.jpg"/></li>
-										</ul>
-										<ol class="clear ol2">
-											<li><img src="images/cc450e35ad8d58253750.jpg"/></li>
-											<li><img src="images/9bc049a0ee22d7922550.jpg"/></li>
-										</ol>
-									</div>
-									<ul>
-										<li><img src="images/b7f87cee8feef2aa7400.jpg"/></li>
-										<li><img src="images/0bfe272c7dbde5049690.jpg"/></li>
-										<li><img src="images/c3931dbdc26a9a6d6940.jpg"/></li>
-										<li><img src="images/b7f87cee8feef2aa7400.jpg"/></li>
-									</ul>
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					
-					
-					<div id="F2" class="lc lc2">
-						<ul>
-							<li>
-								<h3>
-									<span class="sp2">2F软装家具</span>
-									<em>
-										<a>沙发</a>
-										<a>电视柜</a>
-										<a>茶几</a>
-										<a>床</a>
-										<a>床垫</a>
-									</em>
-									<i class="cb cb2"></i>
-								</h3>
-								<div class="lc-box lc-box2  clear">
-									<img src="images/a97a172d87516c844050.jpg"/>
-									<div class="b-m">
-										<ul class="clear ul2">
-											<li><img src="images/47d59c564bb803f57981.jpg"/></li>
-											<li><img src="images/f6b9a5f53acea0798250.jpg"/></li>
-											<li><img src="images/47d59c564bb803f57981.jpg"/></li>
-										</ul>
-										<ol class="clear ol2">
-											<li><img src="images/cc0831f62c9d3fe79510.jpg"/></li>
-											<li><img src="images/bd63489d890548b09210.jpg"/></li>
-										</ol>
-									</div>
-									<ul>
-										<li><img src="images/f9503bcedb3ee88e2370.jpg"/></li>
-										<li><img src="images/7da371833bcfb0823240.jpg"/></li>
-										<li><img src="images/cbdf8044c397e8212140.jpg"/></li>
-										<li><img src="images/3115fec87e5474e29390.jpg"/></li>
-									</ul>
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					
-					
-					<div id="F3" class="lc lc3">
-						<ul>
-							<li>
-								<h3>
-									<span class="sp2">3F家纺家饰</span>
-									<em>
-										<a>四件套</a>
-										<a>被子</a>
-										<a>凉席</a>
-										<a>毛毯</a>
-									</em>
-									<i class="cb"></i>
-								</h3>
-								<div class="lc-box clear">
-									<img src="images/1eca013b406d83058320.jpg"/>
-									<div class="b-m">
-										<ul class="clear ul2">
-											<li><img src="images/07702211a08f0bca3031.jpg"/></li>
-											<li><img src="images/493e1af68d24b3a12860.jpg"/></li>
-											<li><img src="images/07702211a08f0bca3031.jpg"/></li>
-										</ul>
-										<ol class="clear ol2">
-											<li><img src="images/8582ff2069079e401680.jpg"/></li>
-											<li><img src="images/068a71cf75fe06269090.jpg"/></li>
-										</ol>
-									</div>
-									<ul>
-										<li><img src="images/153ad0a56630af822690.jpg"/></li>
-										<li><img src="images/d6688d0bb3b00c459440.jpg"/></li>
-										<li><img src="images/89bfdafd8df5dae01420.jpg"/></li>
-										<li><img src="images/597be4293395a2293140.jpg"/></li>
-									</ul>
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					
-				</div>
+                <div class="midd_box clear">
+                	<div class="midd_left fl">
+                		<h3><span>瑞肯橱柜为为旗舰店</span><img src="images/qq-pic.jpg"/></h3>
+                		<div class="d_sort">
+                			<h2>商品分类</h2>
+                			<ul>
+                				<li>按新品</li>
+                				<li>按价格</li>
+                				<li>按销量</li>
+                				<li>按人气</li>
+                			</ul>
+                			<div class="sear_go">
+                				<input type="text" value="搜索店内商品"/>
+                				<input type="button" value="搜索"/>
+                			</div>
+                			<h2>全部商品</h2>
+                		</div>
+                		<div class="row-g">
+                			<h2>商品排行</h2>
+                			<ul class="clear">
+                				<li><img src="images/364_13430785_240.png"/></li>
+                				<li><img src="images/890_13430402_240.jpg"/></li>
+                				<li><img src="images/068a71cf75fe06269090.jpg"/></li>
+                				<li><img src="images/5360_05199211254696696_240.jpg"/></li>
+                				<li><img src="images/890_13430402_240.jpg"/></li>
+                				<li><img src="images/068a71cf75fe06269090.jpg"/></li>
+                				<li><img src="images/068a71cf75fe06269090.jpg"/></li>
+                				<li><img src="images/5360_05199211254696696_240.jpg"/></li>
+                			</ul>
+                			<a>查看本店其他商品</a>
+                		</div>
+                	</div>
+                	<div class="midd_right fl">
+        				<ol class="ol_li clear">
+        					<li>商品详情</li>
+        					<li>商品评价(0)</li>
+        					<li>销售记录(8)</li>
+        					<li>购买咨询</li>
+        				</ol>
+            			</li>
+            			<div class="det">
+            				<span>商品货号：</span>
+            				<em>品牌：瑞肯橱柜</em>
+            			</div>
+            			<ul class="im_b">
+            				<li><img src="images/8763_05260595343758043_1280.jpg"/></li>
+            				<li><img src="images/2i.jpg"/></li>
+            				<li><img src="images/3i.jpg"/></li>
+            				<li><img src="images/4i.jpg"/></li>
+            				<li><img src="images/5i.jpg"/></li>
+            				<li><img src="images/6i.jpg"/></li>
+            				<li><img src="images/8i.jpg"/></li>
+            				<li><img src="images/9i.jpg"/></li>
+            				<li><img src="images/10i.jpg"/></li>
+            				<li><img src="images/11i.jpg"/></li>
+            				<li><img src="images/12i.jpg"/></li>
+            				<li><img src="images/13i.jpg"/></li>
+            				<li><img src="images/14i.jpg"/></li>	
+            			</ul>
+
+                	</div>
+                </div>
 				<div class="bottom-01">
 					<dl>
 						<dt><img src="images/aafda0df33d2a95e6010.png"</dt>
@@ -690,9 +574,9 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/ajax.js"></script>
 		<script src="js/startMove.js"></script>
-		<script src="js/cookie.js"></script>
 		<script src="js/public.js"></script>
-		<script src="js/index.js"></script>
+		<script src="js/detail.js"></script>
 	</body>
 </html>
